@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  body{
+
+    width: 50%;
+    margin: auto;
+
+
+  }
+  h1{
+
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+
+
+
+
+  }
+
+  table{
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    padding: 5px;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  td,th{
+
+    padding: 10px;
+    text-align: center;
+
+
+  }
+
+  thead{
+    padding: 30px;
+  }
+
+
+  tbody tr {
+
+    border-bottom: 1px solid #dddd;
+
+
+
+  }
+
+
+  thead tr , tfoot tr{
+
+    background-color: red;
+    color: #ffffff;
+
+
+
+  }
+
+
+
+
+
+
+  tbody tr.active-row{
+
+    font-weight: bold;
+    color: red;
+    text-align: center;
+
+
+  }
+
+  tbody tr:nth-of-type(even){
+
+    background-color: #f3f3f3;
+  }
+  
+  input {
+
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+
+
+
+
+  }
+
+
+  @media only screen and (max-width:700px){
+
+    table, tbody, thead, tr, th, td, tfoot{
+
+
+        display: block;
+    }
+    td{
+
+        padding-left: 150px;
+        position :relative;
+
+
+    }
+
+    td ::before{
+
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:130px;
+        bottom: 0%;
+        
+       background-color: red;
+       color: #ffffff;
+       display: flex;
+       align-items: center;
+       padding: 10px;
+       font-weight: bold;
+
+    }
+
+    
+  }
+
+
